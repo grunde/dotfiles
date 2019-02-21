@@ -1,0 +1,41 @@
+### .tmux.conf
+
+unbind C-b
+set -g prefix C-s
+bind-key -r C-s send-prefix
+set-window-option -g mode-keys vi
+
+set -g mouse on
+
+# reload config file (change file location to your the tmux.conf you want to use)
+bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
+
+# split panes using | and -
+bind | split-window -h
+bind - split-window -v
+unbind '"'
+unbind %
+
+# switch panes using Alt-arrow without prefix
+bind -n M-Left select-pane -L
+bind -n M-Right select-pane -R
+bind -n M-Up select-pane -U
+bind -n M-Down select-pane -D
+
+# vi-style copying
+bind-key -T copy-mode-vi 'v' send -X begin-selection
+bind-key -T copy-mode-vi 'V' send -X select-line
+bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "xclip -in -selection clipboard"
+bind-key -T copy-mode-vi 'C-v' send-keys -X rectangle-toggle
+bind-key s set-window-option synchronize-panes\; display-message "synchronize-panes is now #{?pane_synchronized,on,off}"
+bind -n C-k send-keys -R \; clear-history
+
+# Pane resizing
+# Fine adjustment (1 or 2 cursor cells per bump)
+bind -n S-Left resize-pane -L 2
+bind -n S-Right resize-pane -R 2
+bind -n S-Down resize-pane -D 1
+bind -n S-Up resize-pane -U 1
+
+# Import macOS-only config
+if-shell 'test "$(uname -s)" = Darwin' 'source-file ~/.tmux-osx.conf'
