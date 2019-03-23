@@ -39,6 +39,8 @@ brew "wxmac"
 brew "erlang"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # The GNU Compiler Collection
 brew "gcc@4.9"
 # GNU internationalization (i18n) and localization (l10n) library
