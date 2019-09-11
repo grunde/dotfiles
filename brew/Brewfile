@@ -2,7 +2,9 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/dupes"
+tap "homebrew/services"
 tap "homebrew/versions"
+tap "scalacenter/bloop"
 # Search tool like grep, but optimized for programmers
 brew "ack"
 # Engine for large-scale data processing
@@ -29,8 +31,6 @@ brew "dfu-util"
 brew "dos2unix"
 # Charset analyzer and converter
 brew "enca"
-# SSL/TLS cryptography library
-brew "openssl"
 # Image manipulation library
 brew "jpeg"
 # Cross-platform C++ GUI toolkit (wxWidgets for macOS)
@@ -49,7 +49,7 @@ brew "gettext"
 brew "git"
 # Prevents you from committing sensitive information to a git repo
 brew "git-secrets"
-# Command-line option parsing library
+# Command-line option parsing utility
 brew "gnu-getopt"
 # GNU implementation of the famous stream editor
 brew "gnu-sed"
@@ -79,6 +79,10 @@ brew "imagemagick"
 brew "oniguruma"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Kubernetes command-line interface
+brew "kubernetes-cli", link: false
+# SSL/TLS cryptography library
+brew "openssl"
 # Conversion library
 brew "libiconv"
 # Command-line interface for SQLite
@@ -104,7 +108,7 @@ brew "nginx"
 # Port scanning utility for large networks
 brew "nmap"
 # Platform built on V8 to build network applications
-brew "node"
+brew "node", link: false
 # SSL/TLS VPN implementing OSI layer 2 or 3 secure network extension
 brew "openvpn"
 # Apache Parquet command-line tools and utilities
@@ -131,6 +135,8 @@ brew "reattach-to-user-namespace"
 brew "redis"
 # Build tool for Scala projects
 brew "sbt"
+# Spreadsheet program for the terminal, using ncurses
+brew "sc-im"
 # JVM-based programming language
 brew "scala"
 # Compression/decompression library aiming for high speed
@@ -153,5 +159,9 @@ brew "watch"
 brew "watchman"
 # Internet file retriever
 brew "wget"
+# Bloop is a build server to compile, test and run Scala fast
+brew "scalacenter/bloop/bloop"
+cask "anaconda"
 cask "authy"
 cask "karabiner-elements"
+cask "minikube"
