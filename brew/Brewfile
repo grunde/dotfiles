@@ -99,6 +99,8 @@ brew "libyaml"
 brew "lzo"
 # Java-based project management
 brew "maven"
+# Run a Kubernetes cluster locally
+brew "minikube"
 # Library for a binary-based efficient data interchange format
 brew "msgpack"
 # Open source relational database management system
