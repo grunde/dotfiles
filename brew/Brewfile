@@ -1,169 +1,51 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-tap "homebrew/dupes"
 tap "homebrew/services"
-tap "homebrew/versions"
 tap "scalacenter/bloop"
-# Search tool like grep, but optimized for programmers
+cask "adoptopenjdk"
 brew "ack"
-# Engine for large-scale data processing
-brew "apache-spark"
-# Automatic configure script builder
 brew "autoconf"
-# Shell extension to jump to frequently used directories
-brew "autojump"
-# Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Avro command-line tools and utilities
 brew "avro-tools"
-# Client for Amazon Elastic Beanstalk web service
-brew "aws-elasticbeanstalk"
-# Generate code for scanning Z-polyhedra
 brew "cloog", link: false
-# GNU File, Shell, and Text utilities
+brew "cmake"
 brew "coreutils"
-# Cluster ssh tool for Terminal.app
-brew "csshx"
-# USB programmer
-brew "dfu-util"
-# Convert text between DOS, UNIX, and Mac formats
-brew "dos2unix"
-# Charset analyzer and converter
-brew "enca"
-# Image manipulation library
-brew "jpeg"
-# Cross-platform C++ GUI toolkit (wxWidgets for macOS)
-brew "wxmac"
-# Programming language for highly scalable real-time systems
-brew "erlang"
-# User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
-# Command-line fuzzy finder written in Go
 brew "fzf"
-# The GNU Compiler Collection
-brew "gcc@4.9"
-# GNU internationalization (i18n) and localization (l10n) library
-brew "gettext"
-# Distributed revision control system
+brew "gcc"
 brew "git"
-# Prevents you from committing sensitive information to a git repo
-brew "git-secrets"
-# Command-line option parsing utility
 brew "gnu-getopt"
-# GNU implementation of the famous stream editor
 brew "gnu-sed"
-# Common error values for all GnuPG components
 brew "libgpg-error"
-# X.509 and CMS library
-brew "libksba"
-# GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
-# Version Control Visualization Tool
 brew "gource"
-# Open-source build automation tool based on the Groovy and Kotlin DSL
-brew "gradle"
-# Make JSON greppable
-brew "gron"
-# Java-based scripting language
-brew "groovy"
-# Improved top (interactive process viewer)
 brew "htop"
-# Add GitHub support to git on the command-line
 brew "hub"
-# Generic library support script
 brew "libtool"
-# Tools and libraries to manipulate images in many formats
 brew "imagemagick"
-# Regular expressions library
 brew "oniguruma"
-# Lightweight and flexible command-line JSON processor
 brew "jq"
-# Kubernetes command-line interface
 brew "kubernetes-cli", link: false
-# SSL/TLS cryptography library
-brew "openssl"
-# Conversion library
 brew "libiconv"
-# Command-line interface for SQLite
-brew "sqlite"
-# Interpreted, interactive, object-oriented programming language
-brew "python"
-# GNOME XML library
-brew "libxml2"
-# C XSLT library for GNOME
-brew "libxslt"
-# YAML Parser
-brew "libyaml"
-# Real-time data compression library
-brew "lzo"
-# Java-based project management
+brew "macvim"
 brew "maven"
-# Run a Kubernetes cluster locally
 brew "minikube"
-# Library for a binary-based efficient data interchange format
-brew "msgpack"
-# Open source relational database management system
-brew "mysql"
-# HTTP(S) server and reverse proxy, and IMAP/POP3 proxy server
-brew "nginx"
-# Port scanning utility for large networks
-brew "nmap"
-# Platform built on V8 to build network applications
 brew "node", link: false
-# SSL/TLS VPN implementing OSI layer 2 or 3 secure network extension
-brew "openvpn"
-# Apache Parquet command-line tools and utilities
 brew "parquet-tools"
-# Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Password manager
 brew "pass"
-# Password generator
 brew "pwgen"
-# Interpreted, interactive, object-oriented programming language
-brew "python@2"
-# Treat text as a database
 brew "q"
-# Messaging broker
-brew "rabbitmq"
-# Install various Ruby versions and implementations
 brew "ruby-build"
-# Ruby version manager
 brew "rbenv"
-# Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
-# Persistent key-value database, with built-in net interface
-brew "redis"
-# Build tool for Scala projects
 brew "sbt"
-# Spreadsheet program for the terminal, using ncurses
-brew "sc-im"
-# JVM-based programming language
 brew "scala"
-# Compression/decompression library aiming for high speed
-brew "snappy"
-# User interface to the TELNET protocol (built from macOS Sierra sources)
 brew "telnet"
-# Programatically correct mistyped console commands
-brew "thefuck"
-# Granddaddy of HTML tools, with support for modern standards
-brew "tidy-html5"
-# Text interface for Git repositories
-brew "tig"
-# Terminal multiplexer
 brew "tmux"
-# Implementation of Java Servlet and JavaServer Pages
-brew "tomcat"
-# Executes a program periodically, showing output fullscreen
-brew "watch"
-# Watch files and take action when they change
-brew "watchman"
-# Internet file retriever
 brew "wget"
-# Bloop is a build server to compile, test and run Scala fast
-brew "scalacenter/bloop/bloop"
-cask "anaconda"
-cask "authy"
-cask "karabiner-elements"
-cask "minikube"
+cask "google-chrome"
+cask "iterm2"
+cask "rambox"
+cask "spectacle"
