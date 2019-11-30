@@ -238,6 +238,7 @@ function setup_symlinks() {
     info "Setting up symlinks"
     symlink "git" ${DOTFILES_REPO}/git/gitconfig ~/.gitconfig
     symlink "tmux" ${DOTFILES_REPO}/tmux/tmux.conf ~/.tmux.conf
+    symlink "tmux-osx" ${DOTFILES_REPO}/tmux/tmux-osx.conf ~/.tmux-osx.conf
     symlink "vim" ${DOTFILES_REPO}/vim/vimrc ~/.vimrc
 
     #symlink "fish:completions" ${DOTFILES_REPO}/fish/completions ~/.config/fish/completions
